@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 //Getting songs from the folder
 async function getSongs(folder){
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5500/songs/${currFolder}`);
+    let a = await fetch(`/songs/${currFolder}`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -71,7 +71,7 @@ function playMusic(track, paused = false){
 
 //Function to display all the albums in the website
 async function displayAlbums(){
-    let a = await fetch(`http://127.0.0.1:5500/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -118,7 +118,7 @@ async function displayAlbums(){
 async function main(){
     
     // Setting a default playlist
-    songs = await getSongs("lofi");
+    songs = await getSongs("sawar-loon");
     playMusic(songs[0].split(`/songs/${currFolder}/`)[1].replaceAll("%20", " "), true);
 
     //Display Albums
