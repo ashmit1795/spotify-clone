@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utility.css">
+</head>
+<body>
+    <div class="container flex bg-black">
+        <div class="left-col m-1 p-1">
+            <div class="home bg-grey rounded m-1 p-1">
+                <img src="./images/logos/close.svg" alt="Close Button" class="close invert">
+                <div class="logo invert"><img src="./images/logos/Spotify.svg" alt="Spotify Logo"></div>
+                <ul>
+                    <li><img class="invert" src="./images/logos/home.svg" alt="home icon">Home</li>
+                    <li><img class="invert" src="./images/logos/search.svg" alt="search icon">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="./images/logos/library.svg" alt="your-library logo">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="album-name">
+
+                </div>
+                <div class="song-list">
+                    <ul>
+                       
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span> About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</span></a></div>    
+                </div>
+            </div>
+        </div>
+        <div class="right-col m-1 p-1">
+            <div class="header rounded m-1 p-1">
+                <div class="nav">
+                    <img class="invert hamburger" src="./images/logos/hamburger.svg" alt="">
+                    <img src="./images/logos/left-arrow.svg" alt="left arrow icon">
+                    <img src="./images/logos/right-arrow.svg" alt="right arrow icon">
+                </div>
+                <div class="buttons">
+                    <button class="signup-btn">Sign Up</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlists bg-grey m-1 p-1 rounded">
+                <h1>
+                    Spotify Playlists
+                </h1>
+                <div class="card-container">
+                    <!-- <div data-folder="lofi" class="card">
+                        <div class="play">
+                            <img src="./images/logos/play-button-green-icon.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week... </p>
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <img src="./images/logos/play-button-green-icon.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000026d7b14f72609c7f5fdf07d4a" alt="">
+                        <h2>Today's Top Hits</h2>
+                        <p>Jack Harlow is on top of the Hottest 50!</p>
+                    </div> -->
+                    <!-- <div class="card">
+                        <div class="play">
+                            <img src="./images/logos/play-button-green-icon.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+                        <h2>Chillout Lounge</h2>
+                        <p>Just lean back and enjoy relaxed beats.</p>
+                    </div> -->
+                </div>
+                <div class="playbar">
+                    <div class="abovebar">
+                        <div class="song-info"></div>
+                        <div class="song-buttons">
+                            <img id="previous" src="./images/logos/prev.svg" alt="Previous Song">
+                            <img id="play" src="./images/logos/play.svg" alt="Play Song">
+                            <img id="next" src="./images/logos/next.svg" alt="Next Song">
+                        </div>
+                        <div class="timevol">
+                            <div class="song-time">
+                                
+                            </div>
+                            <div class="volume">
+                                <img class="vol-btn" src="./images/logos/volume.svg" alt="">
+                                <input class="range" type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
